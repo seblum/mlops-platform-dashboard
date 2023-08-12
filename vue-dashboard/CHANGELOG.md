@@ -1,35 +1,77 @@
 # Change Log
 
-## [1.0.1] 2023-01-10
+## [1.5.1] 2023-01-10
 
-- Update dependencies
-- Fix the installation issue when running `npm install`
+- Update dependencies and devDependencies.
+- Fix issue when running `npm install`.
 
-## [2.0.0] 2018-05-01
+## [1.5.0] 2022-03-18
 
-## Vue Paper Dashboard Version 2
+### Dependencies Updates
 
-- Bootstrap 4 update
-  - Migrate components to support BS4 as well as existing scss assets
-- Vue CLI 3 update
-  - Get rid of old webpack template and make use of newest vue-cli 3. The project has almost no configuration files and
-    should work out of the box if you copy paste the `src` folder into a newly scaffolded Vue CLI 3 project.
-- Overall project structure improvements
+- Updated all out of date dependencies from `package.json` file
 
-  - The project structure resembles a default [nuxt project structure](https://nuxtjs.org/)
-    We have a breakdown of
-  - `components` folder (only UI components)
-  - `pages` folder which contains pages/views
-  - `layout` folder which contains layout related components
-  - `assets` folder which contains scss, images and fonts
-  - `plugins` folder which has project related plugins
-  - `router` folder which contains routes
+## [1.4.0] 2020-03-12
 
-- Component improvements
-  - Use of `vue-notifyjs` for notifications
-  - Improvements for Sidebar. Option to declare links as children inside Sidebar slot. SSR support.
-  - Minor improvements for other components and SSR support for them
+### Dependencies Updates
 
-## [1.0.0] 2017-06-18
+- Updated all out of date dependencies from `package.json` file
+- Add `API_KEY` file
+- Add new structure for google maps plugin
 
-### Stable Original Release
+## [1.3.2] 2019-12-13
+
+### Dependencies Updates
+
+- Updated all out of date dependencies from `package.json` file
+- The version is now `v1.3.2` to have the same versioning line with the PRO version of this product
+
+## [1.2.1] 2019-06-14
+
+### Dependencies Updates, Vue Material Update
+
+- Updated all out of date dependencies from `package.json` file
+- The framework `Vuematerial.io` was updated to the latest beta version `1.0.0-beta-11`
+
+## [1.2.0] 2019-04-30
+
+### Dependencies Updates
+
+- Updated all out of date dependencies from `package.json` file
+
+## [1.1.0] 2019-02-08
+
+### Dependencies Updates, Improvements
+
+- Updated all out of date dependencies from `package.json` file
+- Removed all `to=""` and replaced with `href=""` props from non router-link components for avoid this error `[Vue warn]: Error in render: "TypeError: Cannot read property 'options' of undefined"`
+- Changed links from footer
+
+## [1.0.3] 2018-11-26
+
+### Bug Fixing
+
+- Fixed error `[Vue warn]: Error in render: "TypeError: Cannot read property 'options' of undefined"`
+
+## [1.0.2] 2018-11-19
+
+### Plugin Updates, BugFixing
+
+- Updated all `dependencies` and `devDependencies` to the latest versions
+- Cleaned `package.json` file
+- Removed all lint warnings and errors
+- Github issues fixed
+- Other bug fixes
+
+## [1.0.1] 2018-07-13
+
+### BugFixing and Updates
+
+- updated all the npm packages
+- scroll issue on mobile devices fixed
+- added button `Upgrade to PRO` in the sidebar
+- another small bug fixes
+
+## [1.0.0] 2018-05-03
+
+- Initial Release

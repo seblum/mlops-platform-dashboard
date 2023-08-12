@@ -1,37 +1,37 @@
 <template>
-  <component
-    :is="tag"
-    @click.native="hideSidebar"
-    class="nav-item"
-    v-bind="$attrs"
-    tag="li"
-  >
-    <a class="nav-link">
-      <slot>
-        <i v-if="icon" :class="icon"></i>
-        <p>{{ name }}</p>
-      </slot>
-    </a>
-  </component>
+  <li class="md-list-item">
+    <router-link
+      class="md-list-item-router md-list-item-container md-button-clean"
+      @click="hideSidebar"
+      v-bind="$attrs"
+    >
+      <div class="md-list-item-content md-ripple">
+        <slot>
+          <md-icon>{{ link.icon }}</md-icon>
+          <p>{{ link.name }}</p>
+        </slot>
+      </div>
+    </router-link>
+  </li>
 </template>
 <script>
 export default {
-  name: "sidebar-link",
-  inheritAttrs: false,
   inject: {
     autoClose: {
       default: true,
     },
-    addLink: {
-      default: () => {},
-    },
-    removeLink: {
-      default: () => {},
-    },
   },
   props: {
-    name: String,
-    icon: String,
+    link: {
+      type: [String, Object],
+      default: () => {
+        return {
+          name: "",
+          path: "",
+          icon: "",
+        };
+      },
+    },
     tag: {
       type: String,
       default: "router-link",
@@ -39,26 +39,14 @@ export default {
   },
   methods: {
     hideSidebar() {
-      if (this.autoClose) {
+      if (
+        this.autoClose &&
+        this.$sidebar &&
+        this.$sidebar.showSidebar === true
+      ) {
         this.$sidebar.displaySidebar(false);
       }
     },
-    isActive() {
-      return this.$el.classList.contains("active");
-    },
-  },
-  mounted() {
-    if (this.addLink) {
-      this.addLink(this);
-    }
-  },
-  beforeDestroy() {
-    if (this.$el && this.$el.parentNode) {
-      this.$el.parentNode.removeChild(this.$el);
-    }
-    if (this.removeLink) {
-      this.removeLink(this);
-    }
   },
 };
 </script>

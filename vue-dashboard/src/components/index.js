@@ -1,34 +1,18 @@
-import FormGroupInput from "./Inputs/formGroupInput.vue";
-
-import DropDown from "./Dropdown.vue";
-import PaperTable from "./PaperTable.vue";
-import Button from "./Button";
-
-import Card from "./Cards/Card.vue";
+// Cards
 import ChartCard from "./Cards/ChartCard.vue";
+import NavTabsCard from "./Cards/NavTabsCard.vue";
 import StatsCard from "./Cards/StatsCard.vue";
 
-import SidebarPlugin from "./SidebarPlugin/index";
-
-let components = {
-  FormGroupInput,
-  Card,
-  ChartCard,
-  StatsCard,
-  PaperTable,
-  DropDown,
-  SidebarPlugin,
-};
-
-export default components;
+// Tables
+import NavTabsTable from "./Tables/NavTabsTable.vue";
+import OrderedTable from "./Tables/OrderedTable.vue";
+import SimpleTable from "./Tables/SimpleTable.vue";
 
 export {
-  FormGroupInput,
-  Card,
   ChartCard,
+  NavTabsCard,
   StatsCard,
-  PaperTable,
-  DropDown,
-  Button,
-  SidebarPlugin,
+  NavTabsTable,
+  OrderedTable,
+  SimpleTable,
 };

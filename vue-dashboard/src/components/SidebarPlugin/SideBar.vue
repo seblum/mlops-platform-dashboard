@@ -1,69 +1,67 @@
 <template>
   <div
     class="sidebar"
-    :data-background-color="backgroundColor"
-    :data-active-color="activeColor"
+    :data-color="sidebarItemColor"
+    :data-image="sidebarBackgroundImage"
+    :style="sidebarStyle"
   >
-    <!--
-            Tip 1: you can change the color of the sidebar's background using: data-background-color="white | black | darkblue"
-            Tip 2: you can change the color of the active button using the data-active-color="primary | info | success | warning | danger"
-        -->
-    <!-- -->
-    <div class="sidebar-wrapper" id="style-3">
-      <div class="logo">
-        <a href="#" class="simple-text">
-          <div class="logo-img">
-            <img src="@/assets/img/vue-logo.png" alt="" />
-          </div>
-          {{ title }}
-        </a>
-      </div>
-      <slot> </slot>
-      <ul class="nav">
+    <div class="logo">
+      <a href="#" class="simple-text logo-mini">
+        <div class="logo-img">
+          <img :src="imgLogo" alt="" />
+        </div>
+      </a>
+
+      <a
+        href="https://www.creative-tim.com/product/vue-material-dashboard"
+        target="_blank"
+        class="simple-text logo-normal"
+      >
+        {{ title }}
+      </a>
+    </div>
+    <div class="sidebar-wrapper">
+      <slot name="content"></slot>
+      <md-list class="nav">
         <!--By default vue-router adds an active class to each route link. This way the links are colored when clicked-->
-        <slot name="links">
+        <slot>
           <sidebar-link
             v-for="(link, index) in sidebarLinks"
-            :key="index"
+            :key="link.name + index"
             :to="link.path"
-            :name="link.name"
-            :icon="link.icon"
+            :link="link"
           >
           </sidebar-link>
         </slot>
-      </ul>
-      <moving-arrow :move-y="arrowMovePx"> </moving-arrow>
+      </md-list>
     </div>
   </div>
 </template>
 <script>
-import MovingArrow from "./MovingArrow.vue";
-import SidebarLink from "./SidebarLink";
+import SidebarLink from "./SidebarLink.vue";
+
 export default {
+  components: {
+    SidebarLink,
+  },
   props: {
     title: {
       type: String,
-      default: "Paper Dashboard",
+      default: "Vue MD",
     },
-    backgroundColor: {
+    sidebarBackgroundImage: {
       type: String,
-      default: "black",
-      validator: (value) => {
-        let acceptedValues = ["white", "black", "darkblue"];
-        return acceptedValues.indexOf(value) !== -1;
-      },
+      default: require("@/assets/img/sidebar-2.jpg"),
     },
-    activeColor: {
+    imgLogo: {
       type: String,
-      default: "success",
+      default: require("@/assets/img/vue-logo.png"),
+    },
+    sidebarItemColor: {
+      type: String,
+      default: "green",
       validator: (value) => {
-        let acceptedValues = [
-          "primary",
-          "info",
-          "success",
-          "warning",
-          "danger",
-        ];
+        let acceptedValues = ["", "purple", "blue", "green", "orange", "red"];
         return acceptedValues.indexOf(value) !== -1;
       },
     },
@@ -79,57 +77,21 @@ export default {
   provide() {
     return {
       autoClose: this.autoClose,
-      addLink: this.addLink,
-      removeLink: this.removeLink,
     };
-  },
-  components: {
-    MovingArrow,
-    SidebarLink,
   },
   computed: {
-    /**
-     * Styles to animate the arrow near the current active sidebar link
-     * @returns {{transform: string}}
-     */
-    arrowMovePx() {
-      return this.linkHeight * this.activeLinkIndex;
+    sidebarStyle() {
+      return {
+        backgroundImage: `url(${this.sidebarBackgroundImage})`,
+      };
     },
-  },
-  data() {
-    return {
-      linkHeight: 65,
-      activeLinkIndex: 0,
-      windowWidth: 0,
-      isWindows: false,
-      hasAutoHeight: false,
-      links: [],
-    };
-  },
-  methods: {
-    findActiveLink() {
-      this.links.forEach((link, index) => {
-        if (link.isActive()) {
-          this.activeLinkIndex = index;
-        }
-      });
-    },
-    addLink(link) {
-      const index = this.$slots.links.indexOf(link.$vnode);
-      this.links.splice(index, 0, link);
-    },
-    removeLink(link) {
-      const index = this.links.indexOf(link);
-      if (index > -1) {
-        this.links.splice(index, 1);
-      }
-    },
-  },
-  mounted() {
-    this.$watch("$route", this.findActiveLink, {
-      immediate: true,
-    });
   },
 };
 </script>
-<style></style>
+<style>
+@media screen and (min-width: 991px) {
+  .nav-mobile-menu {
+    display: none;
+  }
+}
+</style>
