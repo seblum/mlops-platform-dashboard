@@ -47,7 +47,7 @@ export default {
   props: {
     title: {
       type: String,
-      default: "Vue MD",
+      default: "ML Platform",
     },
     sidebarBackgroundImage: {
       type: String,
@@ -59,7 +59,7 @@ export default {
     },
     sidebarItemColor: {
       type: String,
-      default: "green",
+      default: "orange",
       validator: (value) => {
         let acceptedValues = ["", "purple", "blue", "green", "orange", "red"];
         return acceptedValues.indexOf(value) !== -1;

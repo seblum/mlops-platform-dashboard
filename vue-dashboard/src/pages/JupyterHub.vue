@@ -1,25 +1,16 @@
+
 <template>
   <div class="content">
     <div class="md-layout">
       <div class="md-layout-item">
         <md-card class="md-card-plain">
-          <md-card-header data-background-color="orange">
-            <h4 class="title">Material Design Icons</h4>
-            <p class="category">
-              Handcrafted by our friends from
-              <a target="_blank" href="https://design.google.com/icons/"
-                >Google</a
-              >
-            </p>
-          </md-card-header>
-
           <md-card-content>
             <div class="iframe-container hidden-sm">
-              <iframe src="https://vuematerial.io/components/icon">
+              <iframe src="https://en.wikipedia.org/wiki/Main_Page">
                 <p>Your browser does not support iframes.</p>
               </iframe>
             </div>
-            <div class="hidden-md">
+            <!-- <div class="hidden-md">
               <h5>
                 The icons are visible on Desktop mode inside an iframe. Since
                 the iframe is not working on Mobile and Tablets please visit the
@@ -28,14 +19,22 @@
                   >Material Icons</a
                 >
               </h5>
-            </div>
+            </div> -->
           </md-card-content>
+<!--           
+          <md-card-content>
+            <div class="iframe-container hidden-sm">
+              <iframe src="'https://en.wikipedia.org/wiki/Main_Page'" ></iframe>
+            </div>
+          </md-card-content> -->
         </md-card>
       </div>
     </div>
   </div>
 </template>
 
+
+
 <script>
-export default {};
+
 </script>

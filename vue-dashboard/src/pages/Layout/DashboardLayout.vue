@@ -11,34 +11,26 @@
         <md-icon>dashboard</md-icon>
         <p>Dashboard</p>
       </sidebar-link>
-      <sidebar-link to="/user">
+      <sidebar-link to="/airflow">
         <md-icon>person</md-icon>
-        <p>User Profile</p>
+        <p>Airflow</p>
       </sidebar-link>
-      <sidebar-link to="/table">
+      <sidebar-link to="/jupyterhub">
         <md-icon>content_paste</md-icon>
-        <p>Table list</p>
+        <p>JupyterHub</p>
       </sidebar-link>
-      <sidebar-link to="/typography">
-        <md-icon>library_books</md-icon>
-        <p>Typography</p>
+      <sidebar-link to="/mlflow">
+        <md-icon>location_on</md-icon>
+        <p>MLflow</p>
       </sidebar-link>
-      <sidebar-link to="/icons">
+      <sidebar-link to="/grafana">
+        <md-icon>notifications</md-icon>
+        <p>Grafana</p>
+      </sidebar-link>
+      <!-- <sidebar-link to="/icons">
         <md-icon>bubble_chart</md-icon>
         <p>Icons</p>
-      </sidebar-link>
-      <sidebar-link to="/maps">
-        <md-icon>location_on</md-icon>
-        <p>Maps</p>
-      </sidebar-link>
-      <sidebar-link to="/notifications">
-        <md-icon>notifications</md-icon>
-        <p>Notifications</p>
-      </sidebar-link>
-      <sidebar-link to="/upgrade" class="active-pro">
-        <md-icon>unarchive</md-icon>
-        <p>Upgrade to PRO</p>
-      </sidebar-link>
+      </sidebar-link> -->
     </side-bar>
 
     <div class="main-panel">
@@ -58,23 +50,23 @@
 </template>
 
 <script>
-import TopNavbar from "./TopNavbar.vue";
-import ContentFooter from "./ContentFooter.vue";
+// import TopNavbar from "./TopNavbar.vue";
+// import ContentFooter from "./ContentFooter.vue";
 import DashboardContent from "./Content.vue";
 import MobileMenu from "@/pages/Layout/MobileMenu.vue";
-import FixedPlugin from "./Extra/FixedPlugin.vue";
+// import FixedPlugin from "./Extra/FixedPlugin.vue";
 
 export default {
   components: {
-    TopNavbar,
+    // TopNavbar,
     DashboardContent,
-    ContentFooter,
+    //  ContentFooter,
     MobileMenu,
-    FixedPlugin,
+    // FixedPlugin,
   },
   data() {
     return {
-      sidebarBackground: "green",
+      sidebarBackground: "orange",
       sidebarBackgroundImage: require("@/assets/img/sidebar-2.jpg"),
     };
   },
