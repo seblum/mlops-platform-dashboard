@@ -6,7 +6,7 @@
         <md-card class="md-card-plain">
           <md-card-content>
             <div class="iframe-container hidden-sm">
-              <iframe src="https://en.wikipedia.org/wiki/Main_Page">
+              <iframe src="http://www.seblum.me">
                 <p>Your browser does not support iframes.</p>
               </iframe>
             </div>

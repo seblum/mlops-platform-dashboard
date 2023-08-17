@@ -6,7 +6,7 @@
         <md-card class="md-card-plain">
           <md-card-content>
             <div class="iframe-container hidden-sm">
-              <iframe src="https://google.com">
+              <iframe src="http://mlplatform.seblum.me/airflow">
                 <p>Your browser does not support iframes.</p>
               </iframe>
             </div>
