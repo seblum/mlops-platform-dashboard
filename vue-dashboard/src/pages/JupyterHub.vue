@@ -6,7 +6,7 @@
         <md-card class="md-card-plain">
           <md-card-content>
             <div class="iframe-container hidden-sm">
-              <iframe src="https://corsproxy.io/?https://www.google.com">
+              <iframe src="http://mlplatform.seblum.me/jupyterhub">
                 <p>Your browser does not support iframes.</p>
               </iframe>
             </div>
