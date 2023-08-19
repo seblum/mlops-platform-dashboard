@@ -6,6 +6,7 @@ RUN npm install
 COPY ./vue-dashboard/. .
 RUN npm run build
 
+ENV ML_PLATFORM_DOMAIN=mlplatform.seblum.me
 # production stage
 FROM nginx:stable-alpine as production-stage
 COPY --from=build-stage /app/dist/ /app/main/
