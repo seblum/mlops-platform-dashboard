@@ -212,6 +212,18 @@
         }
     }
 
+    [data-background-color="custom-light-blue"],
+    .md-tabs.md-primary .md-tabs-navigation{
+        background: #53829E;
+        @include shadow-big-color($brand-primary);
+    }
+
+    [data-background-color="custom-dark-blue"],
+    .md-tabs.md-primary .md-tabs-navigation{
+        background: #3b5679;
+        @include shadow-big-color($brand-primary);
+    }
+
     [data-background-color="purple"],
     .md-tabs.md-primary .md-tabs-navigation{
         background: linear-gradient(60deg, $purple-400, $purple-600);
@@ -334,7 +346,7 @@
         height: 100vh;  /* Set height to 100% of the viewport height */   
         width: 100vw;  /* Set width to 100% of the viewport width */     
         border: none; /* Remove default border */
-        background: lightyellow; /* Just for styling */
+        background: #ffffff; /* Just for styling */
         @include shadow-big();
     }
 }

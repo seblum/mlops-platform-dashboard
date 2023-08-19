@@ -16,7 +16,8 @@
         <p>Airflow</p>
       </sidebar-link>
       <sidebar-link to="/jupyterhub">
-        <md-icon>content_paste</md-icon>
+        <md-icon :md-src="require('../../assets/logo/jupyter.svg')" />
+        <!-- <md-icon>content_paste</md-icon> -->
         <p>JupyterHub</p>
       </sidebar-link>
       <sidebar-link to="/mlflow">
@@ -26,6 +27,10 @@
       <sidebar-link to="/grafana">
         <md-icon>notifications</md-icon>
         <p>Grafana</p>
+      </sidebar-link>
+      <sidebar-link to="/documentation" class="active-pro">
+        <md-icon>content_paste</md-icon>
+        <p>Documentation</p>
       </sidebar-link>
       <!-- <sidebar-link to="/icons">
         <md-icon>bubble_chart</md-icon>
@@ -66,7 +71,7 @@ export default {
   },
   data() {
     return {
-      sidebarBackground: "orange",
+      sidebarBackground: "red",
       sidebarBackgroundImage: require("@/assets/img/sidebar-5.jpg"),
     };
   },
