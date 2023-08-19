@@ -322,10 +322,19 @@
 .iframe-container{
     margin: -40px -20px -40px -20px;
 
+    // iframe{
+    //     width: 100%;
+    //     height: 90vh;
+    //     border: 0;
+    //     @include shadow-big();
+    // }
+
     iframe{
-        width: 100%;
-        height: 90vh;
-        border: 0;
+        display: block;  /* iframes are inline by default */   
+        height: 100vh;  /* Set height to 100% of the viewport height */   
+        width: 100vw;  /* Set width to 100% of the viewport width */     
+        border: none; /* Remove default border */
+        background: lightyellow; /* Just for styling */
         @include shadow-big();
     }
 }
