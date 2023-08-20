@@ -114,7 +114,7 @@ $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
 
 $font-size-h1:                 3.3125rem;
 $font-size-h2:                 2.25rem !default;
-$font-size-h3:                 1.5625rem;
+$font-size-h3:                 1.43rem;
 $font-size-h4:                 1.125rem !default;
 $font-size-h5:                 1.0625rem !default;
 $font-size-h6:                 0.75rem !default;
@@ -1113,7 +1113,7 @@ $transition-ease-out:             ease-out !default;
 $ultra-fast-transition-time:      60ms  !default;
 $navbar-padding-a:               10px 15px;
 $padding-zero:                   0px !default;
-$sidebar-width:               calc(100% - 260px) !default;
+$sidebar-width:               calc(100% - 230px) !default;
 $topbar-back:          topbar-back !default;
 $bottombar-back:       bottombar-back !default;
 $topbar-x:             topbar-x !default;

@@ -5,6 +5,8 @@ import Airflow from "@/pages/Airflow.vue";
 import JupyterHub from "@/pages/JupyterHub.vue";
 import MLflow from "@/pages/MLflow.vue";
 import Grafana from "@/pages/Grafana.vue";
+import Documentation from "@/pages/Documentation.vue";
+
 // import Icons from "@/pages/Icons.vue";
 
 const routes = [
@@ -45,6 +47,11 @@ const routes = [
         path: "grafana",
         name: "Grafana",
         component: Grafana,
+      },
+      {
+        path: "documentation",
+        name: "Documentation",
+        component: Documentation,
       },
     ],
   },

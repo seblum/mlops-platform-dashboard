@@ -2,7 +2,7 @@ name: Docker CD vuejs-ml-dashboard
 
 env:
   DOCKERREPO: seblum/vuejs-ml-dashboard
-  TAG: v1.0.0
+  TAG: v2.0.0
 
 on:
   push:
