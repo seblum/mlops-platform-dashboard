@@ -12,20 +12,19 @@
         <p>Dashboard</p>
       </sidebar-link>
       <sidebar-link to="/airflow">
-        <md-icon>person</md-icon>
+        <md-icon :md-src="require('../../assets/logo/apache-airflow-white.svg')"/>
         <p>Airflow</p>
       </sidebar-link>
       <sidebar-link to="/jupyterhub">
-        <md-icon :md-src="require('../../assets/logo/jupyter.svg')" />
-        <!-- <md-icon>content_paste</md-icon> -->
+        <md-icon :md-src="require('../../assets/logo/jupyter-white.svg')"/>
         <p>JupyterHub</p>
       </sidebar-link>
       <sidebar-link to="/mlflow">
-        <md-icon>location_on</md-icon>
+        <md-icon :md-src="require('../../assets/logo/mlflow-white.svg')"/>
         <p>MLflow</p>
       </sidebar-link>
       <sidebar-link to="/grafana">
-        <md-icon>notifications</md-icon>
+        <md-icon :md-src="require('../../assets/logo/grafana-white.svg')"/>
         <p>Grafana</p>
       </sidebar-link>
       <sidebar-link to="/documentation" class="active-pro">
