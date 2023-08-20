@@ -12,9 +12,9 @@
         </div>
       </a>
 
+      <!-- href="https://www.seblum.me"
+        target="_blank" -->
       <a
-        href="https://www.creative-tim.com/product/vue-material-dashboard"
-        target="_blank"
         class="simple-text logo-normal"
       >
         {{ title }}

@@ -10,7 +10,9 @@
             <div id="typography">
               <div class="row">
                 <h5>
-                  Harness the power of Airflow, MLflow, Jupyter, and Grafana seamlessly in one place. Easily select and explore each tool from the sidebar, or access them directly through their dedicated routes (e.g., DOMAIN/airflow). For a secure experience, log in using your GitHub credentials. Supercharge your machine learning workflows with us!
+                  Harness the power of Airflow, MLflow, Jupyter, and Grafana seamlessly in one place and supercharge your machine learning workflows with us! Easily select and explore each tool from the sidebar, or access them directly through their dedicated routes (e.g., mlplatform.seblum.me/airflow). <br /> <br />
+                  
+                  For a secure experience, each tool requires log in using your GitHub credentials. Please log in via the dedicated route of each tool, as it displaying the respective tool within the dashboard might not work work due to <a href="https://en.wikipedia.org/wiki/Cross-origin_resource_sharing" target="_blank" >CORS</a>. <br />
                 </h5>
               </div>
             </div>
