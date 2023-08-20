@@ -3,22 +3,15 @@
     <div class="md-layout">
         <md-card>
           <md-card-header data-background-color="custom-dark-blue">
-            <h4 class="title">Material Dashboard Heading</h4>
-            <p class="category">Created using Roboto Font Family</p>
+            <h2 class="title">Welcome!</h2>
+            <!-- <p class="category">Created using Roboto Font Family</p> -->
           </md-card-header>
           <md-card-content>
             <div id="typography">
               <div class="row">
-                  <blockquote>
-                    <p>
-                      I will be the leader of a company that ends up being worth
-                      billions of dollars, because I got the answers. I
-                      understand culture. I am the nucleus. I think that’s a
-                      responsibility that I have, to push possibilities, to show
-                      people, this is the level that things could be at.
-                    </p>
-                    <small> Kanye West, Musician </small>
-                  </blockquote>
+                <h5>
+                  Harness the power of Airflow, MLflow, Jupyter, and Grafana seamlessly in one place. Easily select and explore each tool from the sidebar, or access them directly through their dedicated routes (e.g., DOMAIN/airflow). For a secure experience, log in using your GitHub credentials. Supercharge your machine learning workflows with us!
+                </h5>
               </div>
             </div>
           </md-card-content>
