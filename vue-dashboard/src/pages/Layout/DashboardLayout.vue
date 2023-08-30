@@ -75,7 +75,7 @@ export default {
   data() {
     return {
       sidebarBackground: "custom-red",
-      sidebarBackgroundImage: require("@/assets/img/sidebar-5.jpg"),
+      sidebarBackgroundImage: require("@/assets/img/sidebar-5.jpg"),  /* STYLEZ */
     };
   },
 };

@@ -49,10 +49,10 @@ export default {
       type: String,
       default: "ML Platform",
     },
-    sidebarBackgroundImage: {
-      type: String,
-      default: require("@/assets/img/sidebar-5.jpg"),
-    },
+    // sidebarBackgroundImage: {
+    //   type: String,
+    //   default: require("@/assets/img/sidebar-5.jpg"),  /* STYLEZ */
+    // },
     imgLogo: {
       type: String,
       default: require("@/assets/img/ml-logo.png"),

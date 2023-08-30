@@ -214,14 +214,14 @@
 
     [data-background-color="custom-light-blue"],
     .md-tabs.md-primary .md-tabs-navigation{
-        background: #53829E;
-        @include shadow-big-color($brand-primary);
+        background: #53829E; /* STYLEZ */
+        // @include shadow-big-color(#ff0000); /* STYLEZ */
     }
 
     [data-background-color="custom-dark-blue"],
     .md-tabs.md-primary .md-tabs-navigation{
-        background: #3b5679;
-        @include shadow-big-color($brand-primary);
+        background: #3b5679; /* STYLEZ */
+        // @include shadow-big-color(#ff0000); /* STYLEZ */
     }
 
     [data-background-color="purple"],
