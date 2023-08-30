@@ -27,6 +27,10 @@
         <md-icon :md-src="require('../../assets/logo/grafana-white.svg')"/>
         <p>Grafana</p>
       </sidebar-link>
+      <sidebar-link to="/sagemaker">
+        <md-icon :md-src="require('../../assets/logo/sagemaker-white.svg')"/>
+        <p>Sagemaker</p>
+      </sidebar-link>
       <sidebar-link to="/documentation" class="active-pro">
         <md-icon>content_paste</md-icon>
         <p>Documentation</p>

@@ -5,6 +5,7 @@ import Airflow from "@/pages/Airflow.vue";
 import JupyterHub from "@/pages/JupyterHub.vue";
 import MLflow from "@/pages/MLflow.vue";
 import Grafana from "@/pages/Grafana.vue";
+import Sagemaker from "@/pages/Sagemaker.vue";
 import Documentation from "@/pages/Documentation.vue";
 
 // import Icons from "@/pages/Icons.vue";
@@ -47,6 +48,11 @@ const routes = [
         path: "grafana",
         name: "Grafana",
         component: Grafana,
+      },
+      {
+        path: "sagemaker",
+        name: "Sagemaker",
+        component: Sagemaker,
       },
       {
         path: "documentation",
